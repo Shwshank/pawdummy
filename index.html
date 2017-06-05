@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2F3BA2">
+  <title>PWA Test</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+    
+  <div class="jumbotron text-center" >
+    <h3>PWP + AWSP</h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 text-center">
+      <h3>Sets</h3>
+      <hr>
+      <button class="btn btn-success" id="buttonServer">Load Server </button>
+      <hr>
+      <button class="btn btn-primary" id="buttonCached">Load Cached </button>
+    </div>
+    <div class="col-sm-4 text-center">
+      <h3>Image</h3>
+      <img  alt="" class="img-responsive rounded" id="image">
+    </div>
+    <div class="col-sm-4 text-center">
+      <h3>Details</h3>
+      <hr>
+      <p id="rand"></p>
+      <p id="data1"></p>
+      <p id="data2"></p>
+      <p id="data3"></p>
+    </div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCABbt43iUviRRSOw7ppmWe4Quh799wHbQ",
+    authDomain: "pwa-test-3e36e.firebaseapp.com",
+    databaseURL: "https://pwa-test-3e36e.firebaseio.com",
+    projectId: "pwa-test-3e36e",
+    storageBucket: "pwa-test-3e36e.appspot.com",
+    messagingSenderId: "388280759196"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>
